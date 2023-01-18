@@ -31,16 +31,21 @@
     // console.log('SK@',myNew(2)(3));
   
    function myFun(a){
-          return function(b){
-            if(!b){
-                return a
-            }
-         return myFun(a+b)
+    
+       return function(b){
+           
+         return myFun(a+b)(this)
             
           }
-         if(!a) 
-      return "hi"
+          return a 
     }
-console.log('SK@',myFun(3)(5)());
-
+   // let chk=myFun(3)(5);
+// console.log('SK@',chk());
+console.log('SeK@',myFun(3)(2));
+// function xty(t){
+//     return function(b){
+//         return t+b;
+//     }
+// }
+// console.log('SK@',xty);
 </script>
