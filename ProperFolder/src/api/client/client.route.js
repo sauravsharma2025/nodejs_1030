@@ -4,6 +4,7 @@ import getAllClient, {
   deleteClient,
   getClientToken,
   knowClient,
+  knowClientCondition,
   updateClient,
   verifyClientToken,
 } from "./client.controller.js";
@@ -16,4 +17,5 @@ clientRouter.post("/add", createNewClient);
 clientRouter.get("/knowClient", knowClient);
 clientRouter.post("/update", updateClient);
 clientRouter.post("/delete", deleteClient);
+clientRouter.get("/greaterThan", knowClientCondition);
 export default clientRouter;

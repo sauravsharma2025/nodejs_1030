@@ -68,6 +68,16 @@ export const knowClient = async (req, res, next) => {
     res.json({ msg: "Error Found" });
   }
 };
+export const knowClientCondition = async (req, res) => {
+  try {
+    const result = await clientModel.find({ price: { $gt: 90 } });
+    res.json({
+      result,
+    });
+  } catch (err) {
+    res.json({ msg: "Error aya condtion query me" });
+  }
+};
 export const updateClient = async (req, res, next) => {
   const { name } = req.body;
 
