@@ -1,5 +1,5 @@
 // Node.js program to demonstrate the
-// cipher.final() method
+// cipher.f"inal() method
 
 // Importing crypto module
 import crypto from "crypto";
