@@ -3,6 +3,8 @@ a1 = 20;
 /* a1 = "Rahul";
 a1 = true;
 a1 = "tarun";
+
+
 a1 = [1, 2, 3, 45];
 a1 = null;
 a1 = { name: "Ankit" }; */
