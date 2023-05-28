@@ -4,7 +4,7 @@
 // Importing crypto module
 import crypto from "crypto";
 
-// Creating and initializing algorithm and password
+// Creating and initialkkizing algorithm and password
 const algorithm = "aes-192-cbc";
 const password = "Password used to generate key";
 
